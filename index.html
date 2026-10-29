@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stack House Burgers | Fast, fresh and flame-grilled</title>
+  <meta name="description" content="Stack House Burgers: flame-grilled burgers, chicken, chips and shakes. Build your order and send it on WhatsApp.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#top"><img src="images/logo.svg" alt="" width="36" height="36"> Stack House</a>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="specials.html">Specials</a>
+      <a href="#stores">Find a store</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div>
+        <p class="status" id="status" aria-live="polite">Checking opening hours...</p>
+        <h1>Flame-grilled burgers, stacked your way.</h1>
+        <p>Fresh patties, crispy chips and thick shakes. Build your order below and send it to us on WhatsApp.</p>
+        <a class="btn" href="#menu">Start your order</a>
+      </div>
+      <img src="images/hero.svg" alt="Illustration of a tall burger with a side of chips">
+    </section>
+
+    <div class="layout wrap">
+      <section id="menu">
+        <h2>Menu</h2>
+        <div class="filters" role="group" aria-label="Filter the menu">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="Burgers">Burgers</button>
+          <button class="filter" data-filter="Chicken">Chicken</button>
+          <button class="filter" data-filter="Sides">Sides</button>
+          <button class="filter" data-filter="Drinks">Drinks</button>
+        </div>
+        <div id="menuGrid" class="menu-grid"></div>
+        <noscript>Please turn on JavaScript to see the menu.</noscript>
+      </section>
+
+      <aside id="order" class="order" aria-label="Your order">
+        <h2>Your order</h2>
+        <ul id="orderList" class="order-list"></ul>
+        <p id="orderEmpty" class="muted">Nothing here yet. Add something from the menu.</p>
+        <p class="total">Total: <strong id="orderTotal">R0</strong></p>
+        <label class="pickup">Name for the order
+          <input type="text" id="customer" placeholder="Your name" maxlength="30">
+        </label>
+        <a class="btn wide" id="sendOrder" href="#" target="_blank" rel="noopener">Send order on WhatsApp</a>
+        <button class="link-btn" id="clearOrder">Clear order</button>
+      </aside>
+    </div>
+
+    <section id="stores" class="wrap">
+      <h2>Find a store</h2>
+      <div class="stores">
+        <article><h3>Rosebank</h3><p>Corner Bolton Road and Cradock Avenue<br>Open daily 09:00 to 22:00</p></article>
+        <article><h3>Soweto</h3><p>Maponya Mall, Klipspruit Valley Road<br>Open daily 09:00 to 22:00</p></article>
+        <article><h3>Pretoria</h3><p>Menlyn Park, Atterbury Road<br>Open daily 09:00 to 22:00</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>&copy; <span id="year">2026</span> Stack House Burgers. A practice website for a student deployment project.</p></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+# Netlify reads this file when the site is deployed.
+# Format: from   to   status
+/deals    /specials.html    301
+/offers   /specials.html    301
